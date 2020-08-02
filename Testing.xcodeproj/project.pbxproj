@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B3B72EF24D6ADD800C8CF56 /* ImageExporterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3B72EE24D6ADD800C8CF56 /* ImageExporterService.swift */; };
 		9B5DC1D824D57EA300698781 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5DC1D724D57EA300698781 /* AppDelegate.swift */; };
 		9B5DC1DA24D57EA300698781 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5DC1D924D57EA300698781 /* SceneDelegate.swift */; };
 		9B5DC1DC24D57EA300698781 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5DC1DB24D57EA300698781 /* ViewController.swift */; };
@@ -26,18 +27,16 @@
 		9B5DC20C24D5F7A500698781 /* ErrorApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5DC20B24D5F7A500698781 /* ErrorApiModel.swift */; };
 		9B5DC20F24D5F9EA00698781 /* Reachablity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5DC20E24D5F9EA00698781 /* Reachablity.swift */; };
 		9B5DC21224D5FA6900698781 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9B5DC21124D5FA6900698781 /* RxSwift */; };
-		9B5DC21424D5FA6900698781 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 9B5DC21324D5FA6900698781 /* RxTest */; };
 		9B5DC21624D5FA6900698781 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 9B5DC21524D5FA6900698781 /* RxRelay */; };
 		9B5DC21824D5FA6900698781 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 9B5DC21724D5FA6900698781 /* RxCocoa */; };
-		9B5DC21A24D5FA6900698781 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 9B5DC21924D5FA6900698781 /* RxBlocking */; };
 		9B5DC21E24D5FE1200698781 /* Enviorment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5DC21D24D5FE1200698781 /* Enviorment.swift */; };
 		9B5DC22124D6028C00698781 /* AuthtorizationPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5DC22024D6028C00698781 /* AuthtorizationPlugin.swift */; };
 		9B5DC22524D60EB700698781 /* Data+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5DC22424D60EB700698781 /* Data+Decode.swift */; };
 		9B5DC22824D60F2C00698781 /* Dictionary+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5DC22724D60F2C00698781 /* Dictionary+Decode.swift */; };
-		9B5DC22D24D6190C00698781 /* TargetType+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5DC22C24D6190C00698781 /* TargetType+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B3B72EE24D6ADD800C8CF56 /* ImageExporterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExporterService.swift; sourceTree = "<group>"; };
 		9B5DC1D424D57EA300698781 /* Testing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Testing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B5DC1D724D57EA300698781 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B5DC1D924D57EA300698781 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,7 +58,6 @@
 		9B5DC22024D6028C00698781 /* AuthtorizationPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthtorizationPlugin.swift; sourceTree = "<group>"; };
 		9B5DC22424D60EB700698781 /* Data+Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Decode.swift"; sourceTree = "<group>"; };
 		9B5DC22724D60F2C00698781 /* Dictionary+Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Decode.swift"; sourceTree = "<group>"; };
-		9B5DC22C24D6190C00698781 /* TargetType+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TargetType+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,11 +66,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B5DC21624D5FA6900698781 /* RxRelay in Frameworks */,
-				9B5DC21424D5FA6900698781 /* RxTest in Frameworks */,
 				9B5DC1F124D57F9100698781 /* RxMoya in Frameworks */,
 				9B5DC21824D5FA6900698781 /* RxCocoa in Frameworks */,
 				9B5DC1ED24D57F9100698781 /* Moya in Frameworks */,
-				9B5DC21A24D5FA6900698781 /* RxBlocking in Frameworks */,
 				9B5DC21224D5FA6900698781 /* RxSwift in Frameworks */,
 				9B5DC1EF24D57F9100698781 /* ReactiveMoya in Frameworks */,
 			);
@@ -102,14 +98,12 @@
 			children = (
 				9B5DC1D724D57EA300698781 /* AppDelegate.swift */,
 				9B5DC1D924D57EA300698781 /* SceneDelegate.swift */,
-				9B5DC1DB24D57EA300698781 /* ViewController.swift */,
 				9B5DC22E24D619E600698781 /* Screens */,
 				9B5DC1FF24D5C50700698781 /* Extension */,
 				9B5DC1FA24D5B60900698781 /* Services */,
 				9B5DC1F424D581FF00698781 /* Models */,
 				9B5DC1F224D57FEA00698781 /* Core */,
 				9B5DC21C24D5FE0000698781 /* Misc */,
-				9B5DC1DD24D57EA300698781 /* Main.storyboard */,
 				9B5DC1E024D57EA300698781 /* Assets.xcassets */,
 				9B5DC1E224D57EA300698781 /* LaunchScreen.storyboard */,
 				9B5DC1E524D57EA300698781 /* Info.plist */,
@@ -159,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				9B5DC1FB24D5B68200698781 /* HeroService.swift */,
+				9B3B72EE24D6ADD800C8CF56 /* ImageExporterService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -166,7 +161,6 @@
 		9B5DC1FF24D5C50700698781 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				9B5DC22B24D618E900698781 /* TargetType */,
 				9B5DC22624D60F0700698781 /* Dictionary */,
 				9B5DC22324D60E9700698781 /* Data */,
 				9B5DC20224D5C80A00698781 /* Observable */,
@@ -230,19 +224,21 @@
 			path = Dictionary;
 			sourceTree = "<group>";
 		};
-		9B5DC22B24D618E900698781 /* TargetType */ = {
-			isa = PBXGroup;
-			children = (
-				9B5DC22C24D6190C00698781 /* TargetType+Extensions.swift */,
-			);
-			path = TargetType;
-			sourceTree = "<group>";
-		};
 		9B5DC22E24D619E600698781 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				9B5DC1DD24D57EA300698781 /* Main.storyboard */,
+				9BA56EAF24D61D1F00C2536E /* ImageCreater */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		9BA56EAF24D61D1F00C2536E /* ImageCreater */ = {
+			isa = PBXGroup;
+			children = (
+				9B5DC1DB24D57EA300698781 /* ViewController.swift */,
+			);
+			path = ImageCreater;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,10 +262,8 @@
 				9B5DC1EE24D57F9100698781 /* ReactiveMoya */,
 				9B5DC1F024D57F9100698781 /* RxMoya */,
 				9B5DC21124D5FA6900698781 /* RxSwift */,
-				9B5DC21324D5FA6900698781 /* RxTest */,
 				9B5DC21524D5FA6900698781 /* RxRelay */,
 				9B5DC21724D5FA6900698781 /* RxCocoa */,
-				9B5DC21924D5FA6900698781 /* RxBlocking */,
 			);
 			productName = Testing;
 			productReference = 9B5DC1D424D57EA300698781 /* Testing.app */;
@@ -330,7 +324,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B5DC22D24D6190C00698781 /* TargetType+Extensions.swift in Sources */,
 				9B5DC1DC24D57EA300698781 /* ViewController.swift in Sources */,
 				9B5DC22824D60F2C00698781 /* Dictionary+Decode.swift in Sources */,
 				9B5DC1F924D5A8DC00698781 /* HeroApiTarget.swift in Sources */,
@@ -340,6 +333,7 @@
 				9B5DC21E24D5FE1200698781 /* Enviorment.swift in Sources */,
 				9B5DC1FE24D5C26400698781 /* ApiManager.swift in Sources */,
 				9B5DC1FC24D5B68200698781 /* HeroService.swift in Sources */,
+				9B3B72EF24D6ADD800C8CF56 /* ImageExporterService.swift in Sources */,
 				9B5DC20624D5CCC200698781 /* MultiTargetProvider.swift in Sources */,
 				9B5DC22124D6028C00698781 /* AuthtorizationPlugin.swift in Sources */,
 				9B5DC22524D60EB700698781 /* Data+Decode.swift in Sources */,
@@ -585,11 +579,6 @@
 			package = 9B5DC21024D5FA6900698781 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
 		};
-		9B5DC21324D5FA6900698781 /* RxTest */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9B5DC21024D5FA6900698781 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxTest;
-		};
 		9B5DC21524D5FA6900698781 /* RxRelay */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9B5DC21024D5FA6900698781 /* XCRemoteSwiftPackageReference "RxSwift" */;
@@ -599,11 +588,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9B5DC21024D5FA6900698781 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxCocoa;
-		};
-		9B5DC21924D5FA6900698781 /* RxBlocking */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9B5DC21024D5FA6900698781 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxBlocking;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

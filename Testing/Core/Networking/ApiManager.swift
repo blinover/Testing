@@ -8,13 +8,13 @@
 
 import Moya
 import Alamofire
+import RxSwift
 import Foundation
 
 final class ApiManager {
 	private let manager: Session
 	private let serverURL: String
-	
-	let provider: MultiMoyaProvider
+	private let provider: MultiMoyaProvider
 
 	init(configuration: Enviorment) {
 		self.serverURL = configuration.serverURL
@@ -32,5 +32,9 @@ final class ApiManager {
 		
 		let authPlugin = AuthtorizationPlugin(tokenClosure: { "" })
 		provider = MultiMoyaProvider(callbackQueue: DispatchQueue.main, session: manager, plugins: [authPlugin, loggerPlugin])
+	}
+	
+	func request(_ target: TargetType) -> Observable<Result<Dict, APIError>> {
+		return provider.request(MultiTarget(target))
 	}
 }
