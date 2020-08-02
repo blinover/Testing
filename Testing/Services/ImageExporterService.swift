@@ -11,19 +11,22 @@ import QuartzCore
 
 final class ImageExporterService {
 	
-	func image(with view: UIView) -> UIImage? {
-		let rect = CGRect(origin:CGPoint(x: 0, y: 0), size: view.bounds.size)
-		UIBezierPath(roundedRect: rect, cornerRadius: 8).addClip()
-		view.draw(rect)
-		
-		UIGraphicsBeginImageContextWithOptions(view.bounds.size, true, 0.0)
-		defer { UIGraphicsEndImageContext() }
-		if let context = UIGraphicsGetCurrentContext() {
-			view.layer.render(in: context)
-			let image = UIGraphicsGetImageFromCurrentImageContext()
-			return image
+	func image(from view: UIView) -> UIImage? {
+		let imagee = image(with: view)
+		return pngImage(imagee)
+	}
+	
+	private func image(with view: UIView) -> UIImage {
+		let renderer = UIGraphicsImageRenderer(size: view.bounds.size)
+		let image = renderer.image { ctx in
+			view.drawHierarchy(in: view.bounds, afterScreenUpdates: true)
 		}
-		return nil
+		return image
+	}
+	
+	private func pngImage(_ image: UIImage) -> UIImage? {
+		guard let data = image.pngData() else { return nil }
+		return UIImage(data: data)
 	}
 	
 }

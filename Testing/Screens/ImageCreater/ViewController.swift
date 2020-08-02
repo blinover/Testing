@@ -36,9 +36,11 @@ class ViewController: UIViewController {
 	}
 
 	@IBAction func exportImageButtonPressed(_ sender: UIButton) {
-		guard let image = imageService.image(with: heroContainerView) else { return }
-		
-		let activityController = UIActivityViewController(activityItems: [image], applicationActivities: [])
+		let heroView = ShareHeroView.loadFromNib()
+		heroView.frame = CGRect(x: 0, y: 0, width: 300, height: 300)
+	
+		guard let image = imageService.image(from: heroView), let secondImage = imageService.image(from: heroContainerView) else { return }
+		let activityController = UIActivityViewController(activityItems: [image, secondImage], applicationActivities: [])
 		activityController.excludedActivityTypes = [.assignToContact, .markupAsPDF, .addToReadingList]
 		present(activityController, animated: true, completion: nil)
 	}

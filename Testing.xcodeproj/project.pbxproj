@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9B3B72EF24D6ADD800C8CF56 /* ImageExporterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3B72EE24D6ADD800C8CF56 /* ImageExporterService.swift */; };
+		9B3B72F724D7298900C8CF56 /* UIView+NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3B72F624D7298900C8CF56 /* UIView+NibLoadable.swift */; };
+		9B3B72F924D72D3A00C8CF56 /* ShareHeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3B72F824D72D3A00C8CF56 /* ShareHeroView.swift */; };
+		9B3B72FB24D72D5A00C8CF56 /* ShareHeroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B3B72FA24D72D5A00C8CF56 /* ShareHeroView.xib */; };
 		9B5DC1D824D57EA300698781 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5DC1D724D57EA300698781 /* AppDelegate.swift */; };
 		9B5DC1DA24D57EA300698781 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5DC1D924D57EA300698781 /* SceneDelegate.swift */; };
 		9B5DC1DC24D57EA300698781 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5DC1DB24D57EA300698781 /* ViewController.swift */; };
@@ -37,6 +40,9 @@
 
 /* Begin PBXFileReference section */
 		9B3B72EE24D6ADD800C8CF56 /* ImageExporterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExporterService.swift; sourceTree = "<group>"; };
+		9B3B72F624D7298900C8CF56 /* UIView+NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+NibLoadable.swift"; sourceTree = "<group>"; };
+		9B3B72F824D72D3A00C8CF56 /* ShareHeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareHeroView.swift; sourceTree = "<group>"; };
+		9B3B72FA24D72D5A00C8CF56 /* ShareHeroView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShareHeroView.xib; sourceTree = "<group>"; };
 		9B5DC1D424D57EA300698781 /* Testing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Testing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B5DC1D724D57EA300698781 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B5DC1D924D57EA300698781 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +83,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B3B72F024D7275600C8CF56 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9B3B72F124D7276100C8CF56 /* ShareHeroView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9B3B72F124D7276100C8CF56 /* ShareHeroView */ = {
+			isa = PBXGroup;
+			children = (
+				9B3B72F824D72D3A00C8CF56 /* ShareHeroView.swift */,
+				9B3B72FA24D72D5A00C8CF56 /* ShareHeroView.xib */,
+			);
+			path = ShareHeroView;
+			sourceTree = "<group>";
+		};
+		9B3B72F424D7287800C8CF56 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				9B5DC1D724D57EA300698781 /* AppDelegate.swift */,
+				9B5DC1D924D57EA300698781 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		9B3B72F524D7295C00C8CF56 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				9B3B72F624D7298900C8CF56 /* UIView+NibLoadable.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
 		9B5DC1CB24D57EA300698781 = {
 			isa = PBXGroup;
 			children = (
@@ -96,8 +136,8 @@
 		9B5DC1D624D57EA300698781 /* Testing */ = {
 			isa = PBXGroup;
 			children = (
-				9B5DC1D724D57EA300698781 /* AppDelegate.swift */,
-				9B5DC1D924D57EA300698781 /* SceneDelegate.swift */,
+				9B3B72F424D7287800C8CF56 /* Application */,
+				9B3B72F024D7275600C8CF56 /* Views */,
 				9B5DC22E24D619E600698781 /* Screens */,
 				9B5DC1FF24D5C50700698781 /* Extension */,
 				9B5DC1FA24D5B60900698781 /* Services */,
@@ -161,6 +201,7 @@
 		9B5DC1FF24D5C50700698781 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				9B3B72F524D7295C00C8CF56 /* UIView */,
 				9B5DC22624D60F0700698781 /* Dictionary */,
 				9B5DC22324D60E9700698781 /* Data */,
 				9B5DC20224D5C80A00698781 /* Observable */,
@@ -313,6 +354,7 @@
 			files = (
 				9B5DC1E424D57EA300698781 /* LaunchScreen.storyboard in Resources */,
 				9B5DC1E124D57EA300698781 /* Assets.xcassets in Resources */,
+				9B3B72FB24D72D5A00C8CF56 /* ShareHeroView.xib in Resources */,
 				9B5DC1DF24D57EA300698781 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +378,8 @@
 				9B3B72EF24D6ADD800C8CF56 /* ImageExporterService.swift in Sources */,
 				9B5DC20624D5CCC200698781 /* MultiTargetProvider.swift in Sources */,
 				9B5DC22124D6028C00698781 /* AuthtorizationPlugin.swift in Sources */,
+				9B3B72F724D7298900C8CF56 /* UIView+NibLoadable.swift in Sources */,
+				9B3B72F924D72D3A00C8CF56 /* ShareHeroView.swift in Sources */,
 				9B5DC22524D60EB700698781 /* Data+Decode.swift in Sources */,
 				9B5DC20124D5C80800698781 /* Observable+Map.swift in Sources */,
 				9B5DC1D824D57EA300698781 /* AppDelegate.swift in Sources */,

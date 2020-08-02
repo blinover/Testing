@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ShareHeroView" customModule="Testing" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="285"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sfa-uR-Srx">
+                    <rect key="frame" x="0.0" y="0.0" width="339" height="285"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pVl-dY-8IR">
+                            <rect key="frame" x="8" y="176" width="323" height="101"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="101" id="eam-Z9-mQl"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luke Skywalker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bW-ur-FsE">
+                            <rect key="frame" x="110" y="132" width="119" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="pVl-dY-8IR" firstAttribute="leading" secondItem="Sfa-uR-Srx" secondAttribute="leading" constant="8" id="Co2-cl-d67"/>
+                        <constraint firstItem="3bW-ur-FsE" firstAttribute="centerX" secondItem="Sfa-uR-Srx" secondAttribute="centerX" id="VmO-Hy-sfi"/>
+                        <constraint firstItem="3bW-ur-FsE" firstAttribute="centerY" secondItem="Sfa-uR-Srx" secondAttribute="centerY" id="dZz-iO-eFd"/>
+                        <constraint firstAttribute="trailing" secondItem="pVl-dY-8IR" secondAttribute="trailing" constant="8" id="fjP-ib-bgm"/>
+                        <constraint firstAttribute="bottom" secondItem="pVl-dY-8IR" secondAttribute="bottom" constant="8" id="hic-bC-gIX"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Sfa-uR-Srx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Gpn-cu-K55"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Sfa-uR-Srx" secondAttribute="bottom" id="Lc4-sr-AJr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Sfa-uR-Srx" secondAttribute="trailing" id="N0W-7t-WhX"/>
+                <constraint firstItem="Sfa-uR-Srx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="WWq-cJ-RY0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="136.95652173913044" y="-203.90625"/>
+        </view>
+    </objects>
+</document>
